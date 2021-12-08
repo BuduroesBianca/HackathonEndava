@@ -61,34 +61,34 @@
     </nav>
 
     <div class="main-container">
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+        <div id="carouselExampleFadee" class="carousel slide carousel-fade" data-ride="carousel">
             <div class="carousel-indicators">
-                <button id="line-btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                    class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button id="line-btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                <button type="button" data-bs-target="#carouselExampleFadee" data-bs-slide-to="0"
+                    class="active line-btn" aria-current="true" aria-label="Slide 1"></button>
+                <button class="line-btn" type="button" data-bs-target="#carouselExampleFadee" data-bs-slide-to="1"
                     aria-label="Slide 2"></button>
-                <button id="line-btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                <button class="line-btn" type="button" data-bs-target="#carouselExampleFadee" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active" style="height: 300px;">
-                    <video class="video-fluid" autoplay loop muted src="/Media/study-laptop_Trim.mp4"
+                    <video class="video-fluid" autoplay loop muted src="/media/study-laptop_Trim.mp4"
                         type="video/mp4"></video>
                 </div>
                 <div class="carousel-item" style="height: 300px;">
-                    <video class="video-fluid" autoplay loop muted src="/Media/study-write_Trim.mp4"></video>
+                    <video class="video-fluid" autoplay loop muted src="/media/study-write_Trim.mp4"></video>
                 </div>
                 <div class="carousel-item" style="height: 300px;">
                     <video class="video-fluid" autoplay loop muted src="/media/girl-laptop_Trim.mp4"></video>
                 </div>
 
             </div>
-            <button id="arrow-prev" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+            <button id="arrow-prev" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFadee"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button id="arrow-next" class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+            <button id="arrow-next" class="carousel-control-next" type="button" data-bs-target="#carouselExampleFadee"
                 data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
@@ -98,7 +98,7 @@
         <div class="deadlines row">
             <div class="title-deadlines col-xs-12" >
                 <h1 id="deadlines-title">D E A D L I N E S</h1>
-                <div id="title-underline"></div>
+                <div class="title-underline"></div>
             </div>
             
             <div class="tutorial-deadlines col-xs-12 col-sm-12 col-md-8">
@@ -140,6 +140,102 @@
             
         </div>
         <div id="separator-one"></div>
+
+
+        <div class="courses row">
+            
+            <div class="title-courses col-xs-12">
+                <h1 class="courses-title">C O U R S E S</h1>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="course-description col-xs-12 col-md-4">
+                <h3 class="course-tutorial">Explore courses in your library
+                </h3> <br>
+                <h2 class="tutorial-courses"> You can slide through the main courses in your 
+                    library and access each by clicking the corresponding header
+                    title
+                </h2>
+                <div class="btn-explore-courses">Explore</div>
+            </div>
+
+            <div class="course-overview  col-xs-12 col-md-8">
+
+                  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="/media/writing_hand.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption">
+                          <h5>M A T H E M A T I C S</h5>
+                          <p>Click to review your mathematics course section.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item economics">
+                        <img src="/media/economy_writes.jpg" class="d-block w-100">
+                        <div class="carousel-caption">
+                          <h5>E C O N O M I C S</h5>
+                          <p>Click to review your economics course section.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item statistics">
+                        <img src="/media/calculations_stat.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption">
+                          <h5>S T A T I S T I C S</h5>
+                          <p>Click to review your statistics course section.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-slide="prev" onclick="$('#carouselExampleFade').carousel('prev')">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-slide="next" onclick="$('#carouselExampleFade').carousel('next')"> 
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+
+        </div>
+
+        <div class="digital-notes row">
+            <div class="title-diginotes col-xs-12">
+                <h1 class="courses-title">D I G I T A L N O T E S</h1>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="img-wrapper  col-xs-12">
+                <img src="/media/digital_notes_endava.jpg" class="img-digital-notes">
+            </div>
+
+            <div class="new-feature-desc col-xs-12">
+                <h1>Check out our new feature</h1>
+                <h2>Upload a photo with your writings</h2>
+                <h3>Transform it in document with a simple click</h3>
+                <div class="btn-explore-feature col-xs-12">Explore</div>
+            </div>
+
+            
+        </div>
+
+        <div id="separator-two"></div>
+
+        <div class="bottom-section row">
+            <div class="left-bottom col-xs-12 col-md-7">
+
+            </div>
+            <div class="right-bottom col-xs-12 col-md-5">
+
+            </div>
+        </div>
+
+        
+        
 
 
     </div>
