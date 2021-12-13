@@ -22,6 +22,18 @@ public class User {
     @Column(name = "last_name", nullable = false, length = 20)
     private String lastName;
 
+    public User(){
+
+    }
+
+    public User(Long id, String email, String password, String firstName, String lastName){
+        this.id = id;
+        this.email = email;
+        this.password = password;
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
     public Long getId() {
         return id;
     }
@@ -62,4 +74,14 @@ public class User {
         this.lastName = lastName;
     }
 
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", email='" + email + '\'' +
+                ", first name='" + firstName + '\'' +
+                ", last name=" + lastName +
+                '}';
+    }
 }
